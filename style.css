@@ -1,0 +1,158 @@
+body {
+  background-color: rgb(43, 43, 43);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+button {
+  background-color: pink;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+
+  display: inline-block;
+  font-size: 12px;
+  box-shadow: 0 8px 16px 0 rgba(81, 81, 81, 0.2);
+}
+
+button:hover {
+  background-color: white;
+  color: pink;
+}
+
+section {
+  display: flex;
+}
+
+.black {
+  background-color: black;
+  color: yellow;
+}
+
+.red {
+  background-color: red;
+  color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.blue {
+  background-color: blue;
+  color: yellow;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.aqua {
+  background-color: aqua;
+  color: blue;
+}
+
+.purple {
+  background-color: purple;
+  color: white;
+}
+
+.orange {
+  background-color: orange;
+  color: black;
+}
+
+.violet {
+  background-color: violet;
+  color: red;
+}
+
+.pink {
+  background-color: hotpink;
+  color: purple;
+}
+
+/* .block {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  
+} */
+
+.block {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+/* 
+.block:before {
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-block 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-block {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+} */
