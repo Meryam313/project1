@@ -29,11 +29,9 @@ const entWords = []
 
 const gameBox = document.querySelector('Letters')
 
-const harryWords = ['LUMOS', 'WITCH', 'MAGIC', 'SNAPE', 'MOODY']
-
 const currentWord = ''
 
-const starWords = ['DARTH', 'FORCE', 'ANAKIN', 'SNAPE', 'MOODY']
+const starWords = ['DARTH', 'FORCE', 'ANAKIN', 'JABBA', 'MOODY']
 
 function shuffle(charecters) {
   const letters = charecters.split('')
@@ -63,16 +61,16 @@ function checkGuess() {
   // in this function i asked chatGPT to elaborate the process i must follow to eventually get the result and the answer was basically all the steps i have done already then finally the checking part which i was missing
   const resultBox = document.getElementById('result-word')
   const inputTest = playerInput.value
-  if (inputTest === harryWords[random].toString()) {
+  if (inputTest === starWords[random].toString()) {
     console.log(inputTest)
     // console.log(resultBox)
   }
   console.log('checked')
 }
 
-document.getElementById('next-word').addEventListener('click', () => {
-  console.log('Next button clicked')
-})
+// document.getElementById('next-word').addEventListener('click', () => {
+//   console.log('Next button clicked')
+// })
 
 function searchWord() {}
 
@@ -83,8 +81,8 @@ function searchWord() {}
 //   }
 // }
 
-let random = Math.floor(Math.random() * harryWords.length)
-let randomWord = harryWords[random]
+let random = Math.floor(Math.random() * starWords.length)
+let randomWord = starWords[random]
 console.log('randomWord', randomWord)
 
 // console.log(duplicate.find(randomWord))
@@ -97,20 +95,3 @@ if (!found) {
 }
 
 shuffle(randomWord)
-
-// add here an empty array to not repeate the word twice
-
-// function check() {
-//   let input = document.getElementById('input')
-//   let output = document.getElementById('output')
-
-//   if (input.value.toLocaleLowerCase() === displayWord.toLocaleLowerCase())
-//     output.innerHTML = 'Result: Correct'
-//   else output.innerHTML = 'Result: Incorrect'
-//   console.log('this works')
-// }
-
-// // console.log(harryWords[random])
-// var countDownDate = new Date('0:25').getTime()
-// var distance = countDownDate - now
-// var seconds = Math.floor((distance % (1000 * 60)) / 1000)
