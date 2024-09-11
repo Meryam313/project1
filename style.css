@@ -1,52 +1,51 @@
 body {
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(233, 160, 255);
   margin: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  /* background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vh; */
+  /* flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: white;
   justify-content: space-around;
-  justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
-
-/* section {
-  display: flex;
-  justify-content: space-between;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .block {
   height: 45px;
-  width: 20%;
+  width: 30px;
   outline: none;
   font-size: 16px;
   border-radius: 5px;
   padding: 12px 12px;
-
   border: 1px solid #ccc;
   border-bottom-width: 2px;
-
   text-align: center;
-  flex-direction: column;
-  display: flex;
+  align-self: center;
 }
 .block:hover {
   border-color: #ff00d0;
   color: #ff00d0;
   box-shadow: 2px 2px 8px 1px #ff00d0;
 }
-/* 
-.block: {
-  border-color: #ff0000;
-  color: #ff0000;
-  box-shadow: 2px 2px 8px 1px #ff0000;
-  /* translate: -8px 8px 0px 0px; */
-/* } */
+
+.blocks {
+  display: flex;
+  height: 250px;
+  width: 400px;
+  background-color: #fff;
+  align-items: center;
+  padding-left: 100px;
+  border-radius: 25px;
+
+  border: 2px solid #ad219a;
+}
 
 button {
   appearance: button;
@@ -133,6 +132,7 @@ button:hover {
   border-color: #ff00d0;
   color: #ff00d0;
   box-shadow: 2px 2px 8px 1px #ff00d0;
+  margin-left: 70px;
 }
 
 #submit {

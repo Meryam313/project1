@@ -70,18 +70,7 @@ function checkGuess() {
   console.log('checked')
 }
 
-document.getElementById('next-word').addEventListener('click', () => {
-  console.log('Next button clicked')
-})
-
 function searchWord() {}
-
-// const checkGuess = () => {
-//   if (playerInput[0] === charecters.length) {
-//     console.log(correct)
-//   } else {
-//   }
-// }
 
 let random = Math.floor(Math.random() * harryWords.length)
 let randomWord = harryWords[random]
@@ -98,19 +87,22 @@ if (!found) {
 
 shuffle(randomWord)
 
-// add here an empty array to not repeate the word twice
-
-// function check() {
-//   let input = document.getElementById('input')
-//   let output = document.getElementById('output')
-
-//   if (input.value.toLocaleLowerCase() === displayWord.toLocaleLowerCase())
-//     output.innerHTML = 'Result: Correct'
-//   else output.innerHTML = 'Result: Incorrect'
-//   console.log('this works')
+// function newLevel() {
+//   shuffle()
+//   console.log(shuffle)
+//   searchWord()
+//   console.log(searchWord)
 // }
+// document.getElementById('next-word').addEventListener('click', () => {
+//   console.log('Next button clicked')
+// })
+// newLevel()
 
-// // console.log(harryWords[random])
-// var countDownDate = new Date('0:25').getTime()
-// var distance = countDownDate - now
-// var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+function loadNew(newGame) {
+  shuffle()
+  console.log(shuffle)
+  searchWord()
+  document.getElementById('next-word').addEventListener('click', () => {
+    console.log('Next button clicked', newGame)
+  })
+}
