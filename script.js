@@ -5,27 +5,9 @@ const section = document.querySelector('section')
 const blocks = document.querySelectorAll('.blocks div')
 const input = document.querySelector('#text-input')
 const playerInput = []
-const duplicate = []
+let duplicate = []
 
 const entWords = []
-
-// let clicks = 0
-// const colors = [
-//   'black',
-//   'red',
-//   'yellow',
-//   'blue',
-//   'pink',
-//   'aqua',
-//   'orange',
-//   'green'
-// ]
-
-// button.addEventListener('click', changeClass)
-
-// {
-//   word: 'Harry'
-// }
 
 const gameBox = document.querySelector('Letters')
 
@@ -50,12 +32,6 @@ function shuffle(charecters) {
 
   for (let i = 0; i < charecters.length; i++) {
     blocks[i].innerHTML = letters[i]
-
-    // if (i < harryWords) {
-    //   // blocks[i].innerHTML = letters[i]
-    // } else {
-    //   blocks[i].innerHTML = letters[i]
-    // }
   }
 }
 function checkGuess() {
@@ -65,6 +41,8 @@ function checkGuess() {
   const inputTest = playerInput.value
   if (inputTest === harryWords[random].toString()) {
     console.log(inputTest)
+    alert('Correct')
+
     // console.log(resultBox)
   }
   console.log('checked')
@@ -72,37 +50,37 @@ function checkGuess() {
 
 function searchWord() {}
 
-let random = Math.floor(Math.random() * harryWords.length)
-let randomWord = harryWords[random]
-console.log('randomWord', randomWord)
+let randomWord = ''
+let random = ''
+function randomiseAndCheckDuplicate() {
+  random = Math.floor(Math.random() * harryWords.length)
+  randomWord = harryWords[random]
+  console.log('randomWord', randomWord)
 
-// console.log(duplicate.find(randomWord))
-const found = duplicate.find((e) => e == randomWord)
-console.log(found)
+  // console.log(duplicate.find(randomWord))
+  const found = duplicate.find((e) => e == randomWord)
+  console.log(found)
 
-if (!found) {
-  duplicate.push(randomWord)
-  console.log('duplicate', duplicate)
+  if (!found) {
+    duplicate.push(randomWord)
+    console.log('duplicate', duplicate)
+    console.log(duplicate.length)
+    console.log(harryWords.length)
+    if (duplicate.length == harryWords.length) {
+      // Empty the duplicate array
+      duplicate = []
+      // Write the logic for another level
+      location.replace('level2.html')
+    }
+  } else {
+    randomiseAndCheckDuplicate()
+  }
+  shuffle(randomWord)
 }
 
-shuffle(randomWord)
+randomiseAndCheckDuplicate()
 
-// function newLevel() {
-//   shuffle()
-//   console.log(shuffle)
-//   searchWord()
-//   console.log(searchWord)
-// }
-// document.getElementById('next-word').addEventListener('click', () => {
-//   console.log('Next button clicked')
-// })
-// newLevel()
-
-function loadNew(newGame) {
-  shuffle()
-  console.log(shuffle)
-  searchWord()
-  document.getElementById('next-word').addEventListener('click', () => {
-    console.log('Next button clicked', newGame)
-  })
-}
+document.getElementById('next-word').addEventListener('click', () => {
+  console.log('Next button clicked')
+  randomiseAndCheckDuplicate()
+})

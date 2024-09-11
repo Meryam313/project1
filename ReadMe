@@ -1,63 +1,17 @@
-// created all files - check
-// wrote down ideas - check
-// everything works so far
+// // created all files - check
+// // wrote down ideas - check
+// // everything works so far
 
-// 20 commits minimum
-// the game theme will be harry potter themed at the first level, second level will be start wars, third will be friends or something
+// // 20 commits minimum
+// // the game theme will be harry potter themed at the first level, second level will be start wars, third will be friends or something
 
-//codes
-//using buttons and anchor attribute i can connect both pages together, landing and game level
+// //codes
+// //using buttons and anchor attribute i can connect both pages together, landing and game level
 
-// event listners for the parts where i need to call the code
+// // event listners for the parts where i need to call the code
 
-//words and levels
-//\*_ 1. Harry _/
-// 2. potter
-// 3. nimbus 2000
-// slytherin
-// voldmort
-// nigini
-// moaning mirtle
-// chamber
+// //words and levels
+// harry potter level 1
+//star wars level 2
 
-// <!-- HTML !-->
-// <button class="button-52" role="button">Button 52</button>
-
-// /_ CSS _/
-// .button-52 {
-// font-size: 16px;
-// font-weight: 200;
-// letter-spacing: 1px;
-// padding: 13px 20px 13px;
-// outline: 0;
-// border: 1px solid black;
-// cursor: pointer;
-// position: relative;
-// background-color: rgba(0, 0, 0, 0);
-// user-select: none;
-// -webkit-user-select: none;
-// touch-action: manipulation;
-// }
-
-// .button-52:after {
-// content: "";
-// background-color: #ffe54c;
-// width: 100%;
-// z-index: -1;
-// position: absolute;
-// height: 100%;
-// top: 7px;
-// left: 7px;
-// transition: 0.2s;
-// }
-
-// .button-52:hover:after {
-// top: 0px;
-// left: 0px;
-// }
-
-// @media (min-width: 768px) {
-// .button-52 {
-// padding: 13px 50px 13px;
-// }
-// }
+// // i cheated and got most of my 5 letteres words from chatGPT

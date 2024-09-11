@@ -5,16 +5,17 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"
+      defer
+    ></script>
+
     <title>Scramble</title>
   </head>
   <body>
     <section class="gameBox">
+      <div class="title"><h2>Harry Potter's Scramble</h2></div>
       <div class="blocks">
-        <!-- <div id="gameMain"> 
-        <input id="input" type="text" placeholder="Write Here" /> 
-        <output id="output" type="text"></output>
-    </div>  -->
-
         <div class="block"></div>
         <div class="block"></div>
         <div class="block"></div>
@@ -24,10 +25,10 @@
       <div>
         <br />
         <div class="buttons">
-          <input type="text" id="text-input" placeholder="word" />
-          <!-- <button class="refresh-word">Refresh Word</button> -->
+          <input type="text" id="text-input" placeholder="GUESS" />
+
           <button onclick="checkGuess()">Check Word</button>
-          <!-- <div id="result-word">Correct </div> -->
+
           <button id="next-word">Next</button>
         </div>
       </div>

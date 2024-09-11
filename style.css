@@ -1,14 +1,16 @@
 body {
-  background-color: rgb(233, 160, 255);
+  background-color: rgb(4, 8, 39);
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   height: 100vh;
-  /* background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg);
+  /* background-image: url(https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-147135.jpg);
   background-repeat: no-repeat;
-  background-size: 100vh; */
+  background-size: 100%; */
+  background-image: url(https://wallpapers.com/images/hd/hogwarts-castle-0f0g45ihwlijl35w.jpghttps://c4.wallpaperflare.com/wallpaper/494/399/714/harry-potter-hogwarts-castle-wallpaper-preview.jpg);
+
   /* flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -24,38 +26,40 @@ body {
   font-size: 16px;
   border-radius: 5px;
   padding: 12px 12px;
-  border: 1px solid #ccc;
+  margin: 5px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
   border-bottom-width: 2px;
   text-align: center;
   align-self: center;
 }
 .block:hover {
-  border-color: #ff00d0;
-  color: #ff00d0;
-  box-shadow: 2px 2px 8px 1px #ff00d0;
+  border-color: #27e73a;
+  color: #27e73a;
+  box-shadow: 2px 2px 8px 1px #27e73a;
 }
 
 .blocks {
   display: flex;
   height: 250px;
   width: 400px;
-  background-color: #fff;
+  background-color: #e8e8e8;
   align-items: center;
   padding-left: 100px;
   border-radius: 25px;
 
-  border: 2px solid #ad219a;
+  border: 2px solid #27e73a;
 }
 
 button {
   appearance: button;
-  background-color: #ff00d0;
+  background-color: #27e73a;
 
   border: 1px solid #000;
   border-radius: 4px;
-  box-shadow: #ff7ee7 2px 2px 0 0, #000 4px 4px 0 1px;
+  box-shadow: #27e73a 2px 2px 0 0, #000 4px 4px 0 1px;
   box-sizing: border-box;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   display: inline-block;
   font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
@@ -129,9 +133,9 @@ button:hover {
 }
 
 #text-input {
-  border-color: #ff00d0;
-  color: #ff00d0;
-  box-shadow: 2px 2px 8px 1px #ff00d0;
+  border-color: #27e73a;
+  color: #0d5615;
+  box-shadow: 2px 2px 8px 1px #27e73a;
   margin-left: 70px;
 }
 
@@ -149,7 +153,72 @@ button:hover {
 }
 
 #submit {
-  border-color: #ff00d0;
-  color: #ff00d0;
-  box-shadow: 2px 2px 8px 1px #ff00d0;
+  border-color: #27e73a;
+  color: #27e73a;
+  box-shadow: 2px 2px 8px 1px #27e73a;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+h1 span {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #ffffff;
+  word-spacing: 1px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+h1 span:after,
+.nine h1 span:before {
+  content: ' ';
+  display: block;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+#mainbox {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.title {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+}
+
+.blocks {
+  display: flex;
+  height: 250px;
+  width: 400px;
+  background-color: #e8e8e8;
+  align-items: center;
+  padding-left: 100px;
+  border-radius: 25px;
+
+  border: 2px solid #27e73a;
+}
+
+h3 {
+  align-self: center;
+  color: #ffffff;
 }
