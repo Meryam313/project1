@@ -15,3 +15,22 @@
 //star wars level 2
 
 // // i cheated and got most of my 5 letteres words from chatGPT
+
+// coding part
+// array of words
+//2 seprate html's one for landing
+// seprate js codes to avoid issues
+// shuffle and plit for the characters and words
+// empty array to push the random word into it
+
+//CSS REFERENCES
+// https://uiverse.io/
+// https://getcssscan.com/css-buttons-examples
+
+//ROOM FOR IMPROVEMENT
+// I believe if structured my planning better i would have been able to achieve more on the game and not stick to the mvp
+// I would challenge myself next time with a little bit more beleiving in myself that I can do more
+// As for the current status, adding a function to automatically clear the input box after the checking and moving to the next word
+// Adding different word lengths
+// Enhancing the CSS and polishing it
+// NOT WASTING TIME

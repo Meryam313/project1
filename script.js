@@ -28,7 +28,7 @@ function shuffle(charecters) {
     console.log(shuffle)
   }
 
-  // Hafsa assisted on this to make me understand it further ^^
+  // Hafsa assisted on this to make me understand .  it further ^^
 
   for (let i = 0; i < charecters.length; i++) {
     blocks[i].innerHTML = letters[i]
